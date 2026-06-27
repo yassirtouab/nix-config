@@ -9,7 +9,7 @@
         height = 30;
         modules-left = ["hyprland/workspaces"];
         modules-center = ["hyprland/window"];
-        modules-right = ["hyprland/language" "custom/weather" "pulseaudio" "battery" "clock" "tray"];
+        modules-right = ["hyprland/language" "custom/weather" "network" "pulseaudio" "battery" "clock" "tray"];
         "hyprland/workspaces" = {
           disable-scroll = true;
           show-special = true;
@@ -47,6 +47,17 @@
           exec = "curl -s 'wttr.in/Tashkent?format=%c%t'";
           interval = 300;
           class = "weather";
+        };
+
+        "network" = {
+          format-wifi = " {essid} ({signalStrength}%)";
+          format-ethernet = " {ipaddr}/{cidr}";
+          format-disconnected = "⚠ Disconnected";
+          tooltip-format = "{ifname} via {gwaddr} ";
+          tooltip-format-wifi = "{essid} ({signalStrength}%) ";
+          tooltip-format-ethernet = "{ifname} ";
+          tooltip-format-disconnected = "Disconnected";
+          on-click = "nm-connection-editor";
         };
 
         "pulseaudio" = {
