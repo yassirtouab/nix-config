@@ -94,6 +94,10 @@
           format-full = " {capacity}%";
           format-alt = "{time} {icon}";
           format-icons = ["" "" "" "" ""];
+          tooltip-format-charging = "⚡ Charging ({capacity}%)\nRemaining: {time}";
+          tooltip-format-discharging = "🔋 Discharging ({capacity}%)\nRemaining: {time}";
+          tooltip-format-plugged = "🔌 Plugged In ({capacity}%)";
+          tooltip-format-full = "🔌 Fully Charged & Plugged In ({capacity}%)";
         };
 
         "clock" = {
