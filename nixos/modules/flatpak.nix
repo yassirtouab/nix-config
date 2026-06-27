@@ -17,7 +17,7 @@
     ];
 
     # Strictly declarative: removes any Flatpak not declared in this list
-    removeUnmanagedPackages = true;
+    uninstallUnmanaged = true;
 
     # Keep your Flatpaks updated automatically in the background
     update.auto = {
