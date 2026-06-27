@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   programs.waybar = {
     enable = true;
     style = ./style.css;
@@ -39,12 +39,17 @@
           format-en = "🇺🇸";
           format-ar = "🇲🇦";
           min-length = 5;
-          tooltip = false;
+          tooltip = true;
         };
 
         "custom/weather" = {
-          format = " {} ";
-          exec = "curl -s 'wttr.in/Casablanca?format=%c%t'";
+          format = "{}";
+          exec = pkgs.writeScript "weather.sh" ''
+            #!/bin/sh
+            weather=$(curl -s 'wttr.in/Casablanca?format=%c%t')
+            echo "{\"text\":\" $weather \",\"tooltip\":\"Casablanca, Morocco\"}"
+          '';
+          return-type = "json";
           interval = 300;
           class = "weather";
         };
@@ -58,6 +63,7 @@
           tooltip-format-ethernet = "{ifname} ";
           tooltip-format-disconnected = "Disconnected";
           on-click = "nm-connection-editor";
+          interval = 2;
         };
 
         "pulseaudio" = {
@@ -90,11 +96,12 @@
         "clock" = {
           format = "{:%d.%m.%Y - %H:%M}";
           format-alt = "{:%A, %B %d at %R}";
+          tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         };
 
         "tray" = {
           icon-size = 14;
-          spacing = 1;
+          spacing = 12;
         };
       };
     };
