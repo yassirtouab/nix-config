@@ -6,7 +6,7 @@
     users.${user} = {
       isNormalUser = true;
       description = "Mugen";
-      extraGroups = [ "wheel" "networkmanager" ];
+      extraGroups = [ "wheel" "networkmanager" "docker" ];
     };
   };
 

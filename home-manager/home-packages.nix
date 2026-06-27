@@ -47,9 +47,11 @@
     zip
 
     # Coding stuff
-    openjdk23
+    bun
     nodejs
+    openjdk23
     python311
+    uv
 
     # WM stuff
     hyprpolkitagent
