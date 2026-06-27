@@ -14,7 +14,7 @@
     pavucontrol
     signal-desktop
     telegram-desktop
-    whatsapp-for-linux
+    zapzap
     zen-browser
 
     # CLI utils
