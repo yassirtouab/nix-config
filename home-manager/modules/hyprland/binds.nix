@@ -82,6 +82,7 @@ in {
       # Scratchpad
       "$mainMod,       S, togglespecialworkspace,  magic"
       "$mainMod SHIFT, S, movetoworkspace, special:magic"
+      "$mainMod SHIFT, space, exec, hyprctl devices -j | jq -r '.keyboards[].name' | while read -r dev; do hyprctl switchxkblayout \"$dev\" next; done"
     ];
 
     # Move/resize windows with mainMod + LMB/RMB and dragging

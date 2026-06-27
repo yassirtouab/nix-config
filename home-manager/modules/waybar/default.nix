@@ -36,8 +36,11 @@
         };
 
         "hyprland/language" = {
+          keyboard-name = "at-translated-set-2-keyboard";
           format-en = "🇺🇸";
-          format-arabic = "🇲🇦";
+          format-us = "🇺🇸";
+          format-ar = "🇲🇦";
+          format-ara = "🇲🇦";
           min-length = 5;
           tooltip = true;
           tooltip-format = "{long}";
