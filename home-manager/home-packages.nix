@@ -5,12 +5,10 @@
     # Packages in each category are sorted alphabetically
 
     # Desktop apps
-    anki
     anytype
     ghostty
     localsend
     mpv
-    obs-studio
     onlyoffice-desktopeditors
     pavucontrol
     telegram-desktop
@@ -18,7 +16,6 @@
 
     # CLI utils
     bc
-    bottom
     brightnessctl
     btop
     cliphist
@@ -34,8 +31,6 @@
     microfetch
     playerctl
     ripgrep
-    showmethekey
-    silicon
     udisks
     ueberzugpp
     unzip
