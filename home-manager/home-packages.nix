@@ -6,12 +6,15 @@
 
     # Desktop apps
     anytype
+    brave
     ghostty
     localsend
     mpv
     onlyoffice-desktopeditors
     pavucontrol
+    signal-desktop
     telegram-desktop
+    whatsapp-for-linux
     zen-browser
 
     # CLI utils
