@@ -5,6 +5,7 @@
     ./boot.nix
     ./docker.nix
     ./env.nix
+    ./flatpak.nix
     ./graphics.nix
     ./home-manager.nix
     ./hyprland.nix

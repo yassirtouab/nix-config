@@ -25,6 +25,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nix-flatpak = {
+      url = "github:gmodena/nix-flatpak";
+    };
+
     # COMING SOON...
     #nixvim = {
     #  url = "github:nix-community/nixvim";
@@ -43,17 +47,6 @@
     overlays = [
       (final: prev: {
         zen-browser = inputs.zen-browser.packages.${system}.default;
-        signal-desktop = prev.symlinkJoin {
-          name = "signal-desktop";
-          paths = [ prev.signal-desktop ];
-          nativeBuildInputs = [ prev.makeWrapper ];
-          postBuild = ''
-            wrapProgram $out/bin/signal-desktop \
-              --add-flags "--password-store=gnome-libsecret" \
-              --add-flags "--enable-features=UseOzonePlatform" \
-              --add-flags "--ozone-platform=wayland"
-          '';
-        };
       })
     ];
 

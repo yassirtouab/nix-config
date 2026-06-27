@@ -12,7 +12,6 @@
     mpv
     onlyoffice-desktopeditors
     pavucontrol
-    signal-desktop
     telegram-desktop
     zapzap
     zen-browser
