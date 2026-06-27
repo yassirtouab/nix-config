@@ -40,6 +40,7 @@
           format-ar = "🇲🇦";
           min-length = 5;
           tooltip = true;
+          on-click = "hyprctl switchxkblayout all next";
         };
 
         "custom/weather" = {
