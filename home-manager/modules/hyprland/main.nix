@@ -67,6 +67,10 @@
         kb_model = "";
         kb_options = "grp:caps_toggle";
         kb_rules = "";
+
+        touchpad = {
+          natural_scroll = true;
+        };
       };
 
       gestures = {
