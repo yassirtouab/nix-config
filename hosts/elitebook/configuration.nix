@@ -8,8 +8,6 @@
     ../../nixos/modules/sddm.nix
   ];
 
-  boot.resumeDevice = "/dev/nvme0n1p2";
-
   environment.systemPackages = [ pkgs.home-manager ];
 
   networking.hostName = hostname;
