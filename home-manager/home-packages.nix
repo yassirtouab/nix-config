@@ -52,6 +52,7 @@
     openjdk23
     python311
     uv
+    vscode
 
     # WM stuff
     hyprpolkitagent
