@@ -37,7 +37,7 @@
 
         "hyprland/language" = {
           format-en = "🇺🇸";
-          format-ar = "🇲🇦";
+          format-ara = "🇲🇦";
           min-length = 5;
           tooltip = true;
           on-click = "hyprctl devices -j | jq -r '.keyboards[].name' | while read -r dev; do hyprctl switchxkblayout \"$dev\" next; done";

@@ -62,7 +62,7 @@
       };
 
       input = {
-        kb_layout = "us,ar";
+        kb_layout = "us,ara";
         kb_variant = "";
         kb_model = "";
         kb_options = "grp:caps_toggle";
