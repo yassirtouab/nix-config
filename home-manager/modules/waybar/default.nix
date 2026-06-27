@@ -50,7 +50,7 @@
         };
 
         "network" = {
-          format-wifi = " {essid} ({signalStrength}%)";
+          format-wifi = " {signalStrength}%";
           format-ethernet = " {ipaddr}/{cidr}";
           format-disconnected = "⚠ Disconnected";
           tooltip-format = "{ifname} via {gwaddr} ";
