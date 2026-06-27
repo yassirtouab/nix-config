@@ -62,7 +62,7 @@
       };
 
       input = {
-        kb_layout = "us,ru,il";
+        kb_layout = "us,ar";
         kb_options = "grp:caps_toggle";
       };
 
