@@ -40,7 +40,7 @@
           format-ar = "🇲🇦";
           min-length = 5;
           tooltip = true;
-          on-click = "hyprctl switchxkblayout all next";
+          on-click = "hyprctl devices -j | jq -r '.keyboards[].name' | while read -r dev; do hyprctl switchxkblayout \"$dev\" next; done";
         };
 
         "custom/weather" = {

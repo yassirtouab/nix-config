@@ -26,6 +26,7 @@
     grimblast
     htop
     hyprpicker
+    jq
     ntfs3g
     mediainfo
     microfetch
