@@ -1,8 +1,6 @@
 {
   imports = [
-    ./ai.nix
     ./audio.nix
-    ./biometrics.nix
     ./bluetooth.nix
     ./boot.nix
     ./env.nix
