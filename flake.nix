@@ -20,6 +20,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    zen-browser = {
+      url = "github:youwen5/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # COMING SOON...
     #nixvim = {
     #  url = "github:nix-community/nixvim";
@@ -35,6 +40,12 @@
       { hostname = "elitebook"; stateVersion = "24.11"; }
     ];
 
+    overlays = [
+      (final: prev: {
+        zen-browser = inputs.zen-browser.packages.${system}.default;
+      })
+    ];
+
     makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
       system = system;
       specialArgs = {
@@ -45,6 +56,9 @@
         inputs.disko.nixosModules.disko
         ./hosts/${hostname}/disko.nix
         ./hosts/${hostname}/configuration.nix
+        {
+          nixpkgs.overlays = overlays;
+        }
       ];
     };
 
@@ -57,7 +71,11 @@
       }) {} hosts;
 
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs {
+        inherit system;
+        config.allowUnfree = true;
+        overlays = overlays;
+      };
       extraSpecialArgs = {
         inherit inputs homeStateVersion user;
       };

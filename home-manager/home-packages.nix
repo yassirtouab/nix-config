@@ -7,18 +7,14 @@
     # Desktop apps
     anki
     anytype
-    code-cursor
     ghostty
-    imv
     localsend
     mpv
     obs-studio
-    obsidian
     onlyoffice-desktopeditors
     pavucontrol
-    teams-for-linux
     telegram-desktop
-    vesktop
+    zen-browser
 
     # CLI utils
     bc
