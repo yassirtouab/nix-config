@@ -89,7 +89,9 @@
             critical = 1;
           };
           format = "{icon} {capacity}%";
-          format-charging = " {capacity}%";
+          format-charging = " {capacity}%";
+          format-plugged = " {capacity}%";
+          format-full = " {capacity}%";
           format-alt = "{time} {icon}";
           format-icons = ["" "" "" "" ""];
         };
