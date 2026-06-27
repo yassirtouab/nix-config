@@ -65,7 +65,7 @@
         kb_layout = "us,ara";
         kb_variant = "";
         kb_model = "";
-        kb_options = "grp:caps_toggle";
+        kb_options = "";
         kb_rules = "";
 
         touchpad = {
