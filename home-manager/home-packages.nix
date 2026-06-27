@@ -53,6 +53,7 @@
     python311
 
     # WM stuff
+    hyprpolkitagent
     libsForQt5.xwaylandvideobridge
     libnotify
     xdg-desktop-portal-gtk
