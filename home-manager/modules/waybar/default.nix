@@ -107,7 +107,6 @@
         "clock" = {
           format = "{:%d.%m.%Y - %H:%M}";
           format-alt = "{:%A, %B %d at %R}";
-          tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         };
 
         "tray" = {
