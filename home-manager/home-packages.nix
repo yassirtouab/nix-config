@@ -47,7 +47,7 @@
     # Coding stuff
     bun
     nodejs
-    openjdk23
+    openjdk21
     python311
     uv
     vscode
