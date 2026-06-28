@@ -7,7 +7,7 @@
     backupFileExtension = "backup";
     extraSpecialArgs = {
       inherit inputs user;
-      homeStateVersion = "24.11";
+      homeStateVersion = "26.05";
     };
     users.${user} = import ../../home-manager/home.nix;
   };

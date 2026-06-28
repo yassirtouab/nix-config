@@ -48,10 +48,10 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: let
     system = "x86_64-linux";
-    homeStateVersion = "24.11";
+    homeStateVersion = "26.05";
     user = "mugen";
     hosts = [
-      { hostname = "elitebook"; stateVersion = "24.11"; }
+      { hostname = "elitebook"; stateVersion = "26.05"; }
     ];
 
     overlays = [
