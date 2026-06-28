@@ -1,7 +1,6 @@
 { inputs, pkgs, ... }: {
   imports = [
     # Import flake modules for home-manager
-    inputs.niri.homeModules.niri
     inputs.noctalia.homeModules.default
   ];
 
