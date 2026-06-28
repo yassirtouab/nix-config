@@ -54,7 +54,7 @@
 
     # WM stuff
     hyprpolkitagent
-    libsForQt5.xwaylandvideobridge
+    xwaylandvideobridge
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
