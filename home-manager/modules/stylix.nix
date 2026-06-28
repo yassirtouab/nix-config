@@ -30,7 +30,6 @@
       kitty.enable = false;
       bat.enable = false;
       gtk.enable = false;
-      gnome-terminal.enable = false;
     };
 
     cursor = {
