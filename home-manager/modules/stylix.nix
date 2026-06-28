@@ -25,6 +25,7 @@
       wofi.enable = false;
       hyprland.enable = false;
       hyprlock.enable = false;
+      starship.enable = false;
     };
 
     cursor = {
