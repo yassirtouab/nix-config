@@ -9,11 +9,21 @@ in {
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
-    package = unstable-pkgs.kdePackages.sddm;
+    package = pkgs.kdePackages.sddm;
     theme = "sddm-astronaut";
     extraPackages = [
-      unstable-pkgs.sddm-astronaut
-      unstable-pkgs.kdePackages.qtsvg
+      (pkgs.stdenvNoCC.mkDerivation {
+        name = "sddm-astronaut-theme";
+        src = unstable-pkgs.sddm-astronaut.src;
+        dontBuild = true;
+        installPhase = ''
+          mkdir -p $out/share/sddm/themes/sddm-astronaut
+          cp -r * $out/share/sddm/themes/sddm-astronaut/
+        '';
+      })
+      pkgs.kdePackages.qtsvg
+      pkgs.kdePackages.qtmultimedia
+      pkgs.kdePackages.qtvirtualkeyboard
     ];
   };
 
