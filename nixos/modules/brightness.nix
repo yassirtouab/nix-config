@@ -16,4 +16,10 @@
       }
     ];
   };
+
+  # Declaratively force the actkbd instance for your built-in keyboard (event1)
+  # to start automatically on system boot.
+  systemd.services."actkbd@event1" = {
+    wantedBy = [ "multi-user.target" ];
+  };
 }
