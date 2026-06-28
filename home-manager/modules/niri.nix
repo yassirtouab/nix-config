@@ -5,7 +5,6 @@
   ];
 
   # Enable user-level compositor settings
-  programs.niri.enable = true;
   programs.noctalia.enable = true;
 
   # Configure Noctalia desktop variables, theme, and wallpaper
