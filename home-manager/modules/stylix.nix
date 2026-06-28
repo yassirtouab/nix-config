@@ -17,7 +17,7 @@
   stylix = {
     enable = true;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
 
     targets = {
       neovim.enable = false;
@@ -26,6 +26,11 @@
       hyprland.enable = false;
       hyprlock.enable = false;
       starship.enable = false;
+      alacritty.enable = false;
+      kitty.enable = false;
+      bat.enable = false;
+      gtk.enable = false;
+      gnome-terminal.enable = false;
     };
 
     cursor = {
