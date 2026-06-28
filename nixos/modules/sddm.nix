@@ -30,8 +30,7 @@ let
     installPhase = ''
       mkdir -p $out/share/sddm/themes/sddm-astronaut
       cp -r * $out/share/sddm/themes/sddm-astronaut/
-      sed -i 's|^[[:space:]]*Background[[:space:]]*=[[:space:]]*.*|Background="/var/lib/sddm/custom-wallpaper.png"|g' $out/share/sddm/themes/sddm-astronaut/Themes/japanese_aesthetic.conf
-      cp $out/share/sddm/themes/sddm-astronaut/Themes/japanese_aesthetic.conf $out/share/sddm/themes/sddm-astronaut/Themes/astronaut.conf
+      sed -i 's|^[[:space:]]*Background[[:space:]]*=[[:space:]]*.*|Background="/var/lib/sddm/custom-wallpaper.png"|g' $out/share/sddm/themes/sddm-astronaut/Themes/astronaut.conf
     '';
   };
 in {
