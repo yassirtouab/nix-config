@@ -31,6 +31,10 @@
     };
 
 
+    niri = {
+      url = "github:sodiboo/niri-flake";
+    };
+
     noctalia = {
       url = "github:noctalia-dev/noctalia/cachix";
     };
@@ -63,6 +67,7 @@
       };
 
       modules = [
+        inputs.niri.nixosModules.niri
         inputs.noctalia.nixosModules.default
         inputs.disko.nixosModules.disko
         ./hosts/${hostname}/disko.nix
