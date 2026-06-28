@@ -14,7 +14,7 @@
     ./mime.nix
     ./net.nix
     ./nh.nix
-    # ./niri.nix
+    ./niri.nix
     ./nix.nix
     ./timezone.nix
     ./user.nix

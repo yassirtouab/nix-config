@@ -30,6 +30,15 @@
       url = "github:gmodena/nix-flatpak";
     };
 
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia/cachix";
+    };
+
     # COMING SOON...
     #nixvim = {
     #  url = "github:nix-community/nixvim";
@@ -58,6 +67,8 @@
       };
 
       modules = [
+        inputs.niri.nixosModules.niri
+        inputs.noctalia.nixosModules.default
         inputs.disko.nixosModules.disko
         ./hosts/${hostname}/disko.nix
         ./hosts/${hostname}/configuration.nix

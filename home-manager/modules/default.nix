@@ -8,6 +8,7 @@
     ./hyprland
     ./lazygit.nix
     ./neovim.nix
+    ./niri.nix
     ./ranger.nix
     ./starship.nix
     ./stylix.nix
