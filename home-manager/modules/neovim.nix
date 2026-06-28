@@ -5,7 +5,7 @@
     withPython3 = true;
     extraPackages = with pkgs; [
       lua-language-server
-      python311Packages.python-lsp-server
+      python312Packages.python-lsp-server
       nixd
       vimPlugins.nvim-treesitter-parsers.hyprlang
     ];

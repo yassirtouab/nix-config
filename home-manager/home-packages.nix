@@ -48,7 +48,7 @@
     bun
     nodejs
     openjdk21
-    python311
+    python312
     uv
     vscode
 
