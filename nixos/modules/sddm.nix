@@ -12,7 +12,7 @@ let
     installPhase = ''
       mkdir -p $out/share/sddm/themes/sddm-astronaut
       cp -r * $out/share/sddm/themes/sddm-astronaut/
-      cp $out/share/sddm/themes/sddm-astronaut/Themes/japanese_aesthetic.conf $out/share/sddm/themes/sddm-astronaut/theme.conf
+      cp $out/share/sddm/themes/sddm-astronaut/Themes/japanese_aesthetic.conf $out/share/sddm/themes/sddm-astronaut/Themes/astronaut.conf
     '';
   };
 in {
