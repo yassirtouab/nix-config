@@ -53,8 +53,10 @@
     vscode
 
     # WM stuff
+    fuzzel
     hyprpolkitagent
     libnotify
+    swaylock
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
 
