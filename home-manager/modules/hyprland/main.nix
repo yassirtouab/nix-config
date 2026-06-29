@@ -76,12 +76,10 @@
 
       gestures = {
         workspace_swipe = true;
-        workspace_swipe_invert = true;
-        workspace_swipe_forever	= true;
+        workspace_swipe_forever = true;
       };
 
       dwindle = {
-        pseudotile = true;
         preserve_split = true;
       };
 
@@ -96,29 +94,26 @@
         disable_hyprland_logo = true;
       };
 
-      windowrulev2 = [
+      windowrule = [
         "bordersize 0, floating:0, onworkspace:w[t1]"
 
-        "float,class:(mpv)|(imv)|(showmethekey-gtk)"
-        "move 990 60,size 900 170,pin,noinitialfocus,class:(showmethekey-gtk)"
-        "noborder,nofocus,class:(showmethekey-gtk)"
+        "float, class:(mpv)|(imv)|(showmethekey-gtk)"
+        "move 990 60, class:(showmethekey-gtk)"
+        "size 900 170, class:(showmethekey-gtk)"
+        "pin, class:(showmethekey-gtk)"
+        "noinitialfocus, class:(showmethekey-gtk)"
+        "noborder, class:(showmethekey-gtk)"
+        "nofocus, class:(showmethekey-gtk)"
 
-        "workspace 3,class:(obsidian)"
-        "workspace 3,class:(zathura)"
-        "workspace 4,class:(com.obsproject.Studio)"
-        "workspace 5,class:(telegram)"
-        "workspace 5,class:(vesktop)"
-        "workspace 6,class:(teams-for-linux)"
+        "workspace 3, class:(obsidian)"
+        "workspace 3, class:(zathura)"
+        "workspace 4, class:(com.obsproject.Studio)"
+        "workspace 5, class:(telegram)"
+        "workspace 5, class:(vesktop)"
+        "workspace 6, class:(teams-for-linux)"
 
         "suppressevent maximize, class:.*"
-        "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
-
-        "opacity 0.0 override, class:^(xwaylandvideobridge)$"
-        "noanim, class:^(xwaylandvideobridge)$"
-        "noinitialfocus, class:^(xwaylandvideobridge)$"
-        "maxsize 1 1, class:^(xwaylandvideobridge)$"
-        "noblur, class:^(xwaylandvideobridge)$"
-        "nofocus, class:^(xwaylandvideobridge)$"
+        "nofocus, class:^$, title:^$, xwayland:1, floating:1, fullscreen:0, pinned:0"
       ];
 
       workspace = [

@@ -26,7 +26,7 @@ in {
       "$mainMod,       F, togglefloating,"
       "$mainMod,       D, exec, $menu --show drun"
       "$mainMod,       P, pin,"
-      "$mainMod,       J, togglesplit,"
+      "$mainMod,       J, layoutmsg, togglesplit"
       "$mainMod,       E, exec, bemoji -cn"
       "$mainMod,       V, exec, cliphist list | $menu --dmenu | cliphist decode | wl-copy"
       "$mainMod,       B, exec, pkill -SIGUSR2 waybar"
