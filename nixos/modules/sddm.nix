@@ -34,13 +34,13 @@ let
     '';
   };
 in {
-  # Enable Wayland-native SDDM
+  # Enable the X server (required for SDDM X11 greeter mode)
+  services.xserver.enable = true;
+
+  # Run SDDM login screen on stable X11 instead of experimental Wayland
   services.displayManager.sddm = {
     enable = true;
-    wayland = {
-      enable = true;
-      compositor = "weston";
-    };
+    wayland.enable = false;
     package = pkgs.kdePackages.sddm;
     theme = "sddm-astronaut";
     extraPackages = [
