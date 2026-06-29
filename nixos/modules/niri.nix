@@ -10,6 +10,9 @@
   services.power-profiles-daemon.enable = true;
   security.rtkit.enable = true; # Prevents PipeWire audio stuttering
 
+  # Configure PAM authentication for swaylock to prevent password lockout
+  security.pam.services.swaylock = {};
+
   # XDG portals configuration for Niri session
   xdg.portal = {
     enable = true;
