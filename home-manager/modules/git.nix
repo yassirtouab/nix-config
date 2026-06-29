@@ -1,7 +1,11 @@
 {
   programs.git = {
     enable = true;
-    userName = "Yassir Touab";
-    userEmail = "contact@yassirtouab.com";
+    settings = {
+      user = {
+        name = "Yassir Touab";
+        email = "contact@yassirtouab.com";
+      };
+    };
   };
 }

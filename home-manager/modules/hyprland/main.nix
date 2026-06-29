@@ -100,9 +100,9 @@
         "move 990 60, match:class .*showmethekey-gtk.*"
         "size 900 170, match:class .*showmethekey-gtk.*"
         "pin on, match:class .*showmethekey-gtk.*"
-        "noinitialfocus on, match:class .*showmethekey-gtk.*"
-        "noborder on, match:class .*showmethekey-gtk.*"
-        "nofocus on, match:class .*showmethekey-gtk.*"
+        "no_initial_focus on, match:class .*showmethekey-gtk.*"
+        "no_border on, match:class .*showmethekey-gtk.*"
+        "no_focus on, match:class .*showmethekey-gtk.*"
 
         "workspace 3, match:class .*obsidian.*"
         "workspace 3, match:class .*zathura.*"
@@ -111,8 +111,8 @@
         "workspace 5, match:class .*vesktop.*"
         "workspace 6, match:class .*teams-for-linux.*"
 
-        "suppressevent maximize, match:class .*"
-        "nofocus on, match:class ^$, match:title ^$, match:xwayland 1, match:floating 1, match:fullscreen 0, match:pinned 1"
+        "suppress_event maximize, match:class .*"
+        "no_focus on, match:class ^$, match:title ^$, match:xwayland 1, match:floating 1, match:fullscreen 0, match:pinned 1"
       ];
 
       workspace = [
