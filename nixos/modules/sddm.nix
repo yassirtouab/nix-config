@@ -34,9 +34,6 @@ let
     '';
   };
 in {
-  # Enable proper input device driver configuration
-  services.libinput.enable = true;
-
   # Enable Wayland-native SDDM
   services.displayManager.sddm = {
     enable = true;
