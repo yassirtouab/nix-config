@@ -2,7 +2,7 @@
   imports = [ inputs.home-manager.nixosModules.default ];
 
   home-manager = {
-    useGlobalPkgs = true;
+    useGlobalPkgs = false;
     useUserPackages = true;
     backupFileExtension = "backup";
     extraSpecialArgs = {
