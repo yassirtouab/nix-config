@@ -101,7 +101,7 @@
         "size 900 170, match:class .*showmethekey-gtk.*"
         "pin on, match:class .*showmethekey-gtk.*"
         "no_initial_focus on, match:class .*showmethekey-gtk.*"
-        "noborder on, match:class .*showmethekey-gtk.*"
+        "border_size 0, match:class .*showmethekey-gtk.*"
         "no_focus on, match:class .*showmethekey-gtk.*"
 
         "workspace 3, match:class .*obsidian.*"
