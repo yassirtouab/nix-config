@@ -40,7 +40,7 @@ in {
   # Enable Wayland-native SDDM
   services.displayManager.sddm = {
     enable = true;
-    wayland.enable = true;
+    wayland.enable = false;
     package = pkgs.kdePackages.sddm;
     theme = "sddm-astronaut";
     extraPackages = [

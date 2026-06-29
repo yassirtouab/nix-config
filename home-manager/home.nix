@@ -18,9 +18,4 @@
     homeDirectory = "/home/${user}";
     stateVersion = homeStateVersion;
   };
-
-  xdg.desktopEntries.hyprland = {
-    name = "Hyprland";
-    noDisplay = true;
-  };
 }

@@ -54,6 +54,13 @@
     overlays = [
       (final: prev: {
         zen-browser = inputs.zen-browser.packages.${system}.default;
+        hyprland = prev.hyprland.overrideAttrs (oldAttrs: {
+          postInstall = (oldAttrs.postInstall or "") + ''
+            if [ -f "$out/share/wayland-sessions/hyprland.desktop" ]; then
+              echo "NoDisplay=true" >> "$out/share/wayland-sessions/hyprland.desktop"
+            fi
+          '';
+        });
       })
     ];
 
