@@ -30,6 +30,7 @@
       kitty.enable = false;
       bat.enable = false;
       gtk.enable = false;
+      qt.enable = false;
     };
 
     cursor = {

@@ -58,12 +58,12 @@
     ];
 
     makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
-      system = system;
       specialArgs = {
         inherit inputs stateVersion hostname user;
       };
 
       modules = [
+        { nixpkgs.hostPlatform = system; }
         inputs.noctalia.nixosModules.default
         inputs.disko.nixosModules.disko
         ./hosts/${hostname}/disko.nix
