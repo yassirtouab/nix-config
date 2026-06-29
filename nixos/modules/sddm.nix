@@ -59,13 +59,6 @@ in {
   # Disable TTY autologin to let the graphical login manager take priority
   services.getty.autologinUser = lib.mkForce null;
 
-  # Delay SDDM startup slightly to ensure pointing devices (mouse/touchpad) are fully initialized by udev
-  systemd.services.display-manager = {
-    serviceConfig = {
-      ExecStartPre = "${pkgs.coreutils}/bin/sleep 1.5";
-    };
-  };
-
   # Systemd service to choose a random wallpaper on boot and copy it
   # to the mutable display manager directory.
   systemd.services.sddm-wallpaper-rotator = {
