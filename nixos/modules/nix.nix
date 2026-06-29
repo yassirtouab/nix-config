@@ -3,5 +3,13 @@
     experimental-features = [ "nix-command" "flakes" ];
     extra-substituters = [ "https://noctalia.cachix.org" ];
     extra-trusted-public-keys = [ "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" ];
+    auto-optimise-store = true;
+  };
+
+  # Automatic garbage collection for system generations
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 30d";
   };
 }
