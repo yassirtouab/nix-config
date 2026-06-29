@@ -13,5 +13,7 @@
     "rd.systemd.show_status=false"
     "rd.udev.log_level=3"
     "udev.log_priority=3"
+    "i8042.nopnp=1"
+    "pci=nocrs"
   ];
 }

@@ -33,7 +33,9 @@ let
       sed -i 's|^[[:space:]]*Background[[:space:]]*=[[:space:]]*.*|Background="/var/lib/sddm/custom-wallpaper.png"|g' $out/share/sddm/themes/sddm-astronaut/Themes/astronaut.conf
     '';
   };
-in {
+  # Enable proper input device driver configuration
+  services.libinput.enable = true;
+
   # Enable Wayland-native SDDM
   services.displayManager.sddm = {
     enable = true;
