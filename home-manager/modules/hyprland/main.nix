@@ -74,10 +74,9 @@
         };
       };
 
-      gestures = {
-        workspace_swipe = true;
-        workspace_swipe_forever = true;
-      };
+      gesture = [
+        "3, horizontal, workspace"
+      ];
 
       dwindle = {
         preserve_split = true;
@@ -95,25 +94,25 @@
       };
 
       windowrule = [
-        "bordersize 0, floating:0, onworkspace:w[t1]"
+        "float on, match:class .*mpv.*"
+        "float on, match:class .*imv.*"
+        "float on, match:class .*showmethekey-gtk.*"
+        "move 990 60, match:class .*showmethekey-gtk.*"
+        "size 900 170, match:class .*showmethekey-gtk.*"
+        "pin on, match:class .*showmethekey-gtk.*"
+        "noinitialfocus on, match:class .*showmethekey-gtk.*"
+        "noborder on, match:class .*showmethekey-gtk.*"
+        "nofocus on, match:class .*showmethekey-gtk.*"
 
-        "float, class:(mpv)|(imv)|(showmethekey-gtk)"
-        "move 990 60, class:(showmethekey-gtk)"
-        "size 900 170, class:(showmethekey-gtk)"
-        "pin, class:(showmethekey-gtk)"
-        "noinitialfocus, class:(showmethekey-gtk)"
-        "noborder, class:(showmethekey-gtk)"
-        "nofocus, class:(showmethekey-gtk)"
+        "workspace 3, match:class .*obsidian.*"
+        "workspace 3, match:class .*zathura.*"
+        "workspace 4, match:class .*com.obsproject.Studio.*"
+        "workspace 5, match:class .*telegram.*"
+        "workspace 5, match:class .*vesktop.*"
+        "workspace 6, match:class .*teams-for-linux.*"
 
-        "workspace 3, class:(obsidian)"
-        "workspace 3, class:(zathura)"
-        "workspace 4, class:(com.obsproject.Studio)"
-        "workspace 5, class:(telegram)"
-        "workspace 5, class:(vesktop)"
-        "workspace 6, class:(teams-for-linux)"
-
-        "suppressevent maximize, class:.*"
-        "nofocus, class:^$, title:^$, xwayland:1, floating:1, fullscreen:0, pinned:0"
+        "suppressevent maximize, match:class .*"
+        "nofocus on, match:class ^$, match:title ^$, match:xwayland 1, match:floating 1, match:fullscreen 0, match:pinned 1"
       ];
 
       workspace = [
